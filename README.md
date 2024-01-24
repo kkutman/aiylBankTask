@@ -4,7 +4,7 @@
 
 1. Клонирование репозитория:
    git clone https://github.com/kkutman/aiylBankTask.git
-   cd your-todo-app
+      cd your-todo-app
 
 2. Конфигурация базы данных:
    Отредактируйте файл src/main/resources/application.properties 
@@ -12,18 +12,18 @@
  
    ------------------------------------------------------------------
    spring.datasource.url=jdbc:postgresql://localhost:5432/aiyl_bank
-   spring.datasource.password=postgres
-   spring.datasource.username=postgres
-   spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
-   spring.jpa.hibernate.ddl-auto=none
-   spring.jpa.show-sql=true
-   server.port=8080
-   server.error.include-message=always
+     spring.datasource.password=postgres
+     spring.datasource.username=postgres
+     spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+     spring.jpa.hibernate.ddl-auto=none
+     spring.jpa.show-sql=true
+     server.port=8080
+     server.error.include-message=always
 
    #flyway
    spring.flyway.enabled=true
-   spring.flyway.baseline-on-migrate=true
-   spring.flyway.locations=classpath:db/migration
+     spring.flyway.baseline-on-migrate=true
+     spring.flyway.locations=classpath:db/migration
 
 3. Сборка проекта: 
    Выполните сборку проекта с использованием Maven: mvn clean install
