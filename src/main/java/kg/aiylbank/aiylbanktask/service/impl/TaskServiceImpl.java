@@ -25,7 +25,7 @@ public class TaskServiceImpl implements TaskService {
                 .build();
         repository.save(newTask);
         return SimpleResponse.builder().httpStatus(HttpStatus.OK)
-                .message(String.format("The task was successfully saved with id %s", newTask.getId()))
+                .message(String.format("The  task was successfully saved with id %s", newTask.getId()))
                 .build();
     }
 
