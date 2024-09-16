@@ -9,7 +9,8 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/task")
+@RequestMapping("/api/task"
+)
 @Tag(name = "Task", description = "Task API")
 public class TaskApi {
 
